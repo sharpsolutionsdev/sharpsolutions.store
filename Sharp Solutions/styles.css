@@ -22,10 +22,11 @@ body {
 
 header {
     background-color: #A9A4A4;
-    color: #fff;
+    color: #251f1f;
     text-align: center;
     height: 100px;
     box-shadow: 5px 1px 10px rgb(0, 0, 0);
+
 }
 
 header .logo img {
@@ -46,6 +47,7 @@ main {
 .introduction {
     background-color: #272727;
     height: 800px;
+    position: relative;
 }
 
 
@@ -132,12 +134,68 @@ main .coding-girl{
     width: 600px;
 }
 
+#calender-text{
+    width: 800px;
+    margin-right: 0px;
+    color: #000000;
+    background-color: #DEDEDE;
+    border-radius: 300px;
+    border-color: rgb(214, 6, 255);
+    border-width: 5px;
+    border-style: solid;
+    margin-right: 200px;
+    padding: 80px;
+    margin-inline-start: 0%
+}
+
 #clock-text{
-    width: 950px;
-    padding-right: 180px;
-    color: #DEDEDE;
+    width: 800px;
+    padding: 80px;
+    padding-left: 100px;
+    color: #000000;
+    background-color: #DEDEDE;
+    border-radius: 300px;
+    border-color: rgb(214, 6, 255);
+    border-width: 5px;
+    border-style: solid;
+    margin-right: 60px;
 }
 
 #links-page1{
     padding-bottom: 90px;
+}
+
+main{
+    padding: 0;
+    margin: 0;
+}
+
+/* .flex-container#sec1{
+    background: linear-gradient(
+        to right,
+        rgb(0, 0, 0) 0%,
+        rgb(0, 0, 0) 38%,
+        rgb(81, 81, 85) 40%,
+        rgb(81, 81, 85) 100%
+    );
+} */
+
+/* .flex-container#sec2{
+    background: linear-gradient(
+        to left,
+        rgb(0, 0, 0) 0%,
+        rgb(0, 0, 0) 38%,
+        rgb(81, 81, 85) 40%,
+        rgb(81, 81, 85) 100%
+    );
+} */
+.floating-image {
+    position: absolute; /* Remove the image from normal flow */
+    top: -600px; /* Start positioning at the top of the container */
+    left: 0; /* Start positioning at the left of the container */
+    width: 300px !important;  /* Adjust the size of the image */
+    height: auto; /* Maintain the aspect ratio */
+    transform: rotate(15deg); /* Rotate the image 15 degrees */
+    z-index: 10; /* Ensure it appears above other content if needed */
+
 }
