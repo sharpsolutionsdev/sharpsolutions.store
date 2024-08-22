@@ -90,6 +90,10 @@ main .logo{
     
 }
 
+a{
+    font-family: 'Rubik', sans-serif;
+}
+
 main .coding-girl{
     position: relative;
     padding-top: 30px;
@@ -101,7 +105,8 @@ main .coding-girl{
 
 .frontpage-text{
     position: relative;
-    font-family: 'Sharp', sans-serif;
+    font-family: 'Uber', sans-serif;
+    font-weight: 800;
     font-size: 35px;
     left: 100px;
     color: black;
@@ -110,13 +115,12 @@ main .coding-girl{
 }
 
 @font-face {
-    font-family: 'Sharp';
-    src: url('Fonts\UberMoveMedium.otf') format('opentype');
+    font-family: 'Rubik';
+    src: url('Fonts/Rubik-VariableFont_wght.ttf') format('opentype');
 }
-
 @font-face {
-    font-family: 'BoldSharp';
-    src: url('Fonts\UberMoveBold.otf') format('opentype');
+    font-family: 'Uber';
+    src: url('Fonts/UberMoveMedium.otf') format('opentype');
 }
 
 
@@ -125,7 +129,7 @@ main .coding-girl{
 }
 
 #h-buttons{
-    font-family: 'Sharp', sans-serif;
+    font-family: 'Rubik';
     size: 100px;
 }
 
@@ -191,11 +195,219 @@ main{
 } */
 .floating-image {
     position: absolute; /* Remove the image from normal flow */
-    top: -600px; /* Start positioning at the top of the container */
+    top: 00px; /* Start positioning at the top of the container */
     left: 0; /* Start positioning at the left of the container */
     width: 300px !important;  /* Adjust the size of the image */
     height: auto; /* Maintain the aspect ratio */
-    transform: rotate(15deg); /* Rotate the image 15 degrees */
+    transform: rotate(0deg); /* Rotate the image 15 degrees */
     z-index: 10; /* Ensure it appears above other content if needed */
 
+}
+
+.codingimgs{
+    padding-top: 70px;
+}
+
+/* Footer Styles */
+.site-footer {
+    background-color: #272727; /* Dark background */
+    color: #DEDEDE; /* Light text color */
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact {
+    flex: 1;
+    margin: 10px;
+    font-family: 'Uber', sans-serif;
+}
+
+.footer-about h3,
+.footer-links h3,
+.footer-contact h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #FFF;
+}
+
+.footer-about p,
+.footer-contact p,
+.footer-links ul li {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li a {
+    color: #DEDEDE;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #FFF;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    margin-top: 30px;
+}
+
+.footer-bottom p {
+    font-size: 0.9em;
+    margin: 0;
+    color: #AAA;
+    font-family: 'Uber', sans-serif;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-about,
+    .footer-links,
+    .footer-contact {
+        margin: 20px 0;
+    }
+}
+
+a img.contact-image{
+    color: red;
+}
+
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease; /* Transition for hover in/out */
+    color: #333; /* Default text color */
+}
+
+/* Hover state for anchor tags */
+a:hover {
+    color: #d400ff; /* Color change on hover */
+    transform: scale(1.1); /* Slightly enlarge the link */
+}
+
+/* Adding hover effect to images inside the anchor tags */
+a img.contact-image {
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+    color: red;
+}
+
+/* Image hover effect */
+a:hover img.contact-image {
+    transform: scale(1.2); /* Slightly enlarge the image */
+    opacity: 0.8; /* Slightly dim the image */
+    fill: red;
+}
+
+
+
+/* PROJECT PAGE STYLES */
+.reyton-text{
+    width: 60%;
+    font-family: Uber;
+    font-size: 1.4em;
+}
+
+.project-title{
+    font-family: Rubik;
+}
+
+.projects{
+    padding-left: 5%;
+}
+
+
+
+/* Basic styles for the contact page */
+#contact {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-details {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.contact-form {
+    margin-top: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 10px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    margin-top: 2%;
+    padding:10px;
+    background-color: #dd00ff;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contact-form button:hover {
+    background-color: #9c00d4;
+    transition: 0.5s;
+}
+
+label{
+    font-family: Uber;
+}
+
+.con-header{
+    font-family: Uber;
+}
+
+img#logo-contact{
+    width: 80%;
+    height: auto;
+    margin-top: 40px;
 }
