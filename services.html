@@ -44,37 +44,44 @@
                 </h1>
                 <p class="process">At Sharp Solutions, our design process is carefully crafted to ensure that each client receives a personalized and efficient service, leading to a website that truly meets their needs. Here’s how we bring your vision to life:
                     <br><br>    
-                    1. **Initial Correspondence: Understanding Your Needs**
+                    <b>1. Initial Correspondence: Understanding Your Needs</b>
                        - We start with detailed email correspondence, where you can outline the type of website you’re looking for, its scale, and discuss potential solutions. This initial conversation helps us understand your goals and prepare for the next steps.
                     <br><br>
-                    2. **Video Meeting or Phone Call: Finalizing Details**
+                    <b>2. Video Meeting or Phone Call: Finalizing Details</b>
                        - After our email exchange, we schedule a video meeting or phone call to confirm all the details and begin discussing the design process in depth. This conversation ensures that we are aligned with your expectations and allows us to provide insights and recommendations.
                     <br><br>
-                    3. **Prototyping in Figma: Refining the Vision**
+                    <b>3. Prototyping in Figma: Refining the Vision</b>
                        - Understanding that time is of the essence, we quickly move into the design phase by prototyping your website in Figma. Think of this as tracing a drawing before committing it to ink—it's a way to ensure that every aspect of the design meets your approval before any coding begins. We’re happy to create several iterations until you’re completely satisfied with the design.
                     <br><br>
-                    4. **Coding: Bringing the Design to Life**
+                    <b>4. Coding: Bringing the Design to Life</b>
                        - Once the design is finalized, we begin coding using HTML, CSS, JavaScript, and potentially SQL if your project requires a database for handling data or receiving input, such as a contact form or booking system. You might wonder why we choose coding over website builders like Wix or WordPress. The reason is simple: cost-effectiveness. By choosing Sharp Solutions, you avoid expensive monthly subscriptions and hosting fees. In fact, we offer free hosting for three years!
                     <br><br>
-                    5. **Publishing and Additional Services**
+                    <b>5. Publishing and Additional Services</b>
                        - After the development phase, we publish your website to the World Wide Web. Additionally, we offer support in setting up essential online features like Google Reviews, Google Maps, and other tools that can enhance your business’s online presence.
                     <br><br>
                     Our comprehensive design process is focused on delivering high-quality, bespoke websites that not only meet but exceed your expectations, all while offering excellent value. We look forward to hearing from you.</p>
                     <div class="contact-container">
                         <div class="contact-form">
-                            <h2 class="con-header">Please send us any queries: </h2>
-                            <form action="send-message.php" method="post">
+                            <h2 class="con-header">Send Us a Message</h2>
+                            <form action="https://formsubmit.co/f66c1de294603359e9cb2eed7b99d1bf" method="POST">
                                 <label for="name">Full Name:</label>
                                 <input type="text" id="name" name="name" required>
+                        
                                 <label for="email">Email Address:</label>
                                 <input type="email" id="email" name="email" required>
+                        
                                 <label for="phone">Phone Number:</label>
                                 <input type="tel" id="phone" name="phone">
+                        
                                 <label for="subject">Subject:</label>
                                 <input type="text" id="subject" name="subject" required>
+                        
                                 <label for="message">Message:</label>
                                 <textarea id="message" name="message" rows="5" required></textarea>
+                                
                                 <button type="submit">Send Message</button>
+                                <!-- hidden inputs -->
+                                <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
                             </form>
                         </div>
                     </div>
