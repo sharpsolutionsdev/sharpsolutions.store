@@ -321,7 +321,7 @@ a:hover img.contact-image {
 
 /* PROJECT PAGE STYLES */
 .reyton-text{
-    width: 60%;
+    width: 60vw;
     font-family: Uber;
     font-size: 1.4em;
 }
@@ -329,11 +329,45 @@ a:hover img.contact-image {
 .project-title{
     font-family: Rubik;
 }
+.feature-text{
+    width: 80vw;
+    font-family: Uber;
+    font-size: 1.4em;
+    padding-left: 3vw;
+}
+
+.project-container{
+    display: grid; 
+    grid-template-columns: 2.2fr 0fr 0.8fr; 
+    /* grid-template-rows: 1fr 1fr 1fr;  */
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "reyton reyton purple"
+      "reyton reyton purple"
+      "reyton reyton purple"; 
+      overflow: hidden;
+}
+
+.reyton { grid-area: reyton; }
+.purple { grid-area: purplee; }
+
+img#purple{
+    position: relative;
+    width: 80vw;
+    right: 300px;
+    bottom: 100px;
+    z-index: -1;
+    height: 600px;
+}
 
 .projects{
     padding-left: 5%;
+    height: 500px;
 }
 
+.feature{
+    padding-left: 3vw;
+}
 
 
 /* Basic styles for the contact page */
