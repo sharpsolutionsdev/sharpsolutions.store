@@ -680,4 +680,43 @@ img#email{
     .footer-bottom p {
         font-size: 14px;
     }
+
+    /* Thank you adjustments */
+    .coding-girl#purple-thank{
+        display: none;
+    }
+
+    .logo-container#thank-you{
+        height: 260px !important;
+    }
+
+    /* project adjustments */
+    .purplee{
+        display: none;
+    }
+
+    .reyton,.reyton-text{
+        width: 95vw;
+    }
+
+    .project-container{
+        overflow: visible;
+    }
+}
+
+
+/* Thank You */
+.logo-container#thank-you{
+    height: 70vh;
+}
+
+img.coding-girl#purple-thank{
+    width: 60vw;
+    position:absolute;
+    top: 14vh;
+    
+}
+
+.logo-container{
+    
 }
