@@ -240,6 +240,8 @@ img#jsimg{
     flex: 1;
     margin: 10px;
     font-family: 'Uber', sans-serif;
+
+
 }
 
 .footer-about h3,
@@ -268,8 +270,14 @@ img#jsimg{
     transition: color 0.3s ease;
 }
 
-.footer-links ul li a:hover {
-    color: #FFF;
+.footer-contact a{
+    color: white;
+}
+
+.footer-links ul li a:hover,
+.footer-contact ul li a:hover {
+    color: #e413bd;
+    transition: 1s;
 }
 
 .footer-bottom {
