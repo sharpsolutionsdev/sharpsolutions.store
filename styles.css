@@ -9,6 +9,12 @@ body {
     animation: transitionIn 0.75s;
 }
 
+body, html {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    width: 100%; /* Ensure the body takes up the full width */
+    margin: 0; /* Remove any default margin */
+}
+
 @keyframes transitionIn {
     from{
         opacity: 0;
@@ -173,6 +179,7 @@ main .coding-girl{
 main{
     padding: 0;
     margin: 0;
+    flex-grow: 1; /* Allows the main content to fill available space */
 }
 
 /* .flex-container#sec1{
@@ -359,34 +366,25 @@ a:hover img.contact-image {
     padding-left: 0vw;
 }
 
-.project-container{
-    display: grid; 
-    height: 100vh;
-    grid-template-columns: 2.2fr 0fr 0.8fr; 
-    /* grid-template-rows: 1fr 1fr 1fr;  */
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "reyton reyton purple"
-      "reyton reyton purple"
-      "reyton reyton purple"; 
-      overflow-x: hidden;
-}
-
-.reyton { grid-area: reyton; }
-.purple { grid-area: purplee; }
-
-img#purple{
-    position: relative;
+/* Initial state for purple image */
+/* Initial state for purple image */
+.purple-img {
+    /* opacity: 0; */
+    transform: translateX(100px);  /* Start off-screen to the right */
+    transition: opacity 0.5s ease-out, transform 1s ease-out; /* Transition for smooth effects */
+    position: absolute; /* Use absolute positioning */
+    top: 50%; /* Adjust position */
+    left: 80%; /* Adjust position */
+    transform: translate(-50%, -50%); /* Center the image */
     width: 80vw;
-    right: 300px;
-    bottom: 100px;
-    z-index: -1;
     height: 600px;
+    z-index: -1; /* Ensure it stays behind content */
+    object-fit: cover; /* Ensure the image scales properly */
 }
 
 .projects{
     padding-left: 5%;
-    height: 500px;
+    height: auto;
 }
 
 .feature{
@@ -772,3 +770,48 @@ button{
     font-family: Uber;
     
 }
+
+/* New */
+/* Base state - hidden */
+.clock-img, .calender-img {
+    opacity: 0;
+    transform: translateX(0);
+    transition: opacity 0.5s ease-out, transform 1s ease-out;
+  }
+  
+  /* Fly in from left */
+  .fly-in-left {
+    opacity: 1;
+    transform: translateX(0);
+    animation: flyInLeft 1s ease-out forwards;
+  }
+  
+  /* Fly in from right */
+  .fly-in-right {
+    opacity: 1;
+    transform: translateX(0);
+    animation: flyInRight 1s ease-out forwards;
+  }
+  
+  @keyframes flyInLeft {
+    from {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes flyInRight {
+    from {
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
